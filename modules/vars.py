@@ -1,6 +1,7 @@
 # SudoR2spr WOODcraft
 # Add your details here and then deploy by clicking on HEROKU Deploy button
+from os import getenv
 
-api_id = "1701393"
-api_hash = "96089a340f5892fd06aea683cbfb73c6"
-bot_token = "6872135659:AAwwm1jsMGNOFJnuICL_a1coI6CI6udAY6F4"
+api_id = getenv("API_ID", "")
+api_hash = getenv("API_HASH", "")
+bot_token = getenv("BOT_TOKEN", "")
